@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const form = document.querySelector('#new-item-form')
   form.addEventListener('submit', handleFormSubmit)
+
 });
 
 const handleFormSubmit = function (event){
@@ -31,19 +32,6 @@ const listItem = document.createElement('div')
 const list = document.querySelector('#reading-list')
 list.appendChild(listItem)
 
+event.target.reset()
 
 }
-//   resultForm = document.querySelector('save')
-//   resultForm.textContent = 'testing'
-// }
-//
-// const createListItem = function(event) {
-//   const newReadingListTitle = document.createElement('li')
-//   newReadingListTitle.textContent = `title`
-//   const newReadingAuthor = document.createElement('li')
-//   newReadingListTitle.textContent = `author`
-// }
-
-
-// const list = document.querySelector('#reading-list')
-// list.appendChild(createListItem)
